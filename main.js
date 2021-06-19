@@ -4,9 +4,10 @@
 let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
+
 let btns = document.querySelectorAll(".myBtn");
 for (btn of btns) {
-    btns.addEventListener('click', event => { modal.style.display = "block"; })
+    btn.addEventListener('click', () => { modal.style.display = "block"; })
 }
 
 // Get the <span> element that closes the modal
